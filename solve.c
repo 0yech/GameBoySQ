@@ -75,7 +75,7 @@ void    solve_game(t_game *game) {
             if (game->grid[y][x] == '.')
             {
                 box.size = 1;
-                while (recurchecker(x, y, box.size, game)) // Augmente la taille du carré si valide
+                while (recurchecker(x, y, box.size, game)) // Increase box size when 1 is returned
                     box.size++;
                 if (box.size - 1 > box.biggest)
                 {
